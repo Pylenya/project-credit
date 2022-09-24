@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav" data-nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#"
+                ><img src="./img/header/header-logo.svg" alt="логотип"
+              /></a>
+            </li>
+            <li class="nav__item"><a href="#">Кредиты</a></li>
+            <li class="nav__item"><a href="#">Партнёры</a></li>
+            <li class="nav__item"><a href="#">Новости</a></li>
+            <li class="nav__item"><a href="#">Контакты</a></li>
+            <li class="nav__item"><a href="#">Взнос</a></li>
+            <li class="nav__item">
+              <a href="tel:+78005553535">
+                <img
+                  class="tel-logo"
+                  src="./img/header/telephone-pic.svg"
+                  alt="телефон"
+                />
+                <span>8 800 555 35 35</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <button class="input">
+                <img src="./img/header/user.svg" alt="войти" />
+                <span>Войти</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger" data-burger>
+          <span class="burger__line"></span>
+        </button>
+        <a class="burger--logo" href="#"
+          ><img src="./img/header/header-logo.svg" alt="логотип"
+        /></a>
+      </div>
+    </header>
+    <section class="hero" id="#hero">
+      <div class="container">
+        <div class="hero__box">
+          <div class="box__left">
+            <div class="hero__title">
+              <h1>Изи кредит — легко и просто</h1>
+            </div>
+            <div class="hero__desc">
+              <p>
+                Честное потребительское кредитование и займы без переплат и
+                коллекторов
+              </p>
+            </div>
+          </div>
+          <div class="box__right">
+            <form class="credit">
+              <div class="credit__title">
+                <h2>Получить займ</h2>
+              </div>
+              <div class="credit__desc">
+                <p>
+                  Первый платёж по займу начинается со следующего месяца.
+                  Никаких переплат и скпрытых процентов
+                </p>
+              </div>
+              <div class="inputs--hero">
+                <div class="input--hero">
+                  <input
+                    class="input--kredit"
+                    type="number"
+                    id="credit--amount"
+                    value="25000"
+                  />
+                  <div class="placeholder">Хочу взять</div>
+                  <div class="placeholder--right">rub</div>
+                </div>
+                <div class="input--hero">
+                  <input
+                    class="input--kredit"
+                    type="number"
+                    id="credit--term"
+                    min="1"
+                    value="12"
+                  />
+                  <div class="placeholder">На срок</div>
+                  <div class="placeholder--right">мес.</div>
+                </div>
+                <div class="input--hero">
+                  <input
+                    class="input--kredit result"
+                    type="text"
+                    id="credit--monthly"
+                    disabled
+                  />
+                  <div class="placeholder">Ежемесячная плата</div>
+                  <div class="placeholder--right">rub</div>
+                </div>
+              </div>
+              <input id="checkbox--1" class="checkbox" type="checkbox" />
+              <label for="checkbox--1"
+                >Я принимаю условия <a href="#">передачи информации</a></label
+              >
+              <button class="btn" data-path="one">Подать заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how__to__get" id="#how__to__get">
+      <div class="container">
+        <div class="how__title">
+          <h2>Как получить займ</h2>
+        </div>
+        <div class="how__cards">
+          <div class="how__card">
+            <div class="card__number">01</div>
+            <div class="card__title">
+              <h3>Заполни простую заявку</h3>
+            </div>
+            <div class="card__desc">
+              <p>Это займет не менее 2 минут</p>
+            </div>
+          </div>
+          <div class="how__card">
+            <div class="card__number">
+              <span>02</span>
+            </div>
+            <div class="card__title">
+              <h3>Подпиши договор займа</h3>
+            </div>
+            <div class="card__desc">
+              <p>Онлайн, в филиалах EasyCredit, МТС или Мегафон</p>
+            </div>
+          </div>
+          <div class="how__card">
+            <div class="card__number">
+              <span>03</span>
+            </div>
+            <div class="card__title">
+              <h3>Получи деньги в тот же день</h3>
+            </div>
+            <div class="card__desc">
+              <p>
+                Получи деньги в любом филиале EasyCredit, на банковский счет или
+                в любом почтовом отделении
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits" id="#benefits">
+      <div class="container">
+        <div class="benefits__title">
+          <h2>Наши преимущества</h2>
+        </div>
+        <div class="benefits__cards">
+          <div class="benefits__card">
+            <div class="benefits__card-box">
+              <div class="benefits__card-pic">
+                <img src="./img/benefits/image-1.png" alt="скорость" />
+              </div>
+              <div class="benefits__card-title">
+                <h3>Скорость</h3>
+              </div>
+              <div class="benefits__card-desc">
+                <p>Оформление - от 5 до 15 минут, расмотрение и выплата</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__card">
+            <div class="benefits__card-box">
+              <div class="benefits__card-pic">
+                <img src="./img/benefits/image-2.png" alt="Функциональность" />
+              </div>
+              <div class="benefits__card-title">
+                <h3>Функциональность</h3>
+              </div>
+              <div class="benefits__card-desc">
+                <p>
+                  Работает сервис круглосуточно, поэтому воспользоваться его
+                  услегами можно в любой момент
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__card">
+            <div class="benefits__card-box">
+              <div class="benefits__card-pic">
+                <img src="./img/benefits/image-3.png" alt="скорость" />
+              </div>
+              <div class="benefits__card-title">
+                <h3>Надёжность</h3>
+              </div>
+              <div class="benefits__card-desc">
+                <p>Поможем в трудную минуту, вмне зависимости от ситуации</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="#reviews">
+      <div class="container">
+        <div class="reviews__title">
+          <h2>Отзывы наших клиентов</h2>
+        </div>
+        <div class="reviews__slider">
+          <div class="reviews__slide">
+            <div class="slider__img">
+              <img src="./img/reviews/user1.jpg" alt="портрет" />
+            </div>
+            <div class="slider__text">
+              <div class="slider__title">
+                <h3>Владислав Стоялов</h3>
+              </div>
+              <div class="slider__grade">
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+              </div>
+              <div class="slider__desc">
+                <p>
+                  После использования услуг компании у меня осталось
+                  положительные мысли, вежливый консультант колл-центра помог
+                  мне заполнить анкету, а рассмотрение моего запроса не заняло
+                  много времени. После использования услуг компании у меня
+                  осталось положительные мысли, вежливый консультант колл-центра
+                  помог мне заполнить анкету, а рассмотрение моего запроса не
+                  заняло много времени.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__slide">
+            <div class="slider__img">
+              <img src="./img/reviews/user3.jpg" alt="портрет" />
+            </div>
+            <div class="slider__text">
+              <div class="slider__title">
+                <h3>Иван Кузнецов</h3>
+              </div>
+              <div class="slider__grade">
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+              </div>
+              <div class="slider__desc">
+                <p>Быстро и легко можно взять кредит, рекомендую.</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__slide">
+            <div class="slider__img">
+              <img src="./img/reviews/user2.jpg" alt="портрет" />
+            </div>
+            <div class="slider__text">
+              <div class="slider__title">
+                <h3>Ульяна</h3>
+              </div>
+              <div class="slider__grade">
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+                <img src="./img/reviews/Star.svg" alt="звезда" />
+              </div>
+              <div class="slider__desc">
+                <p>
+                  Самые лучшие условия кредитования в стране. Очень понравился
+                  персонал и скорость подачи докуметов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form" id="#form">
+      <div class="container">
+        <form class="form">
+          <div class="form__box">
+            <div class="form__title">
+              <h4>Заполни данные для заявки</h4>
+            </div>
+            <div class="inputs">
+              <div class="input--item">
+                <input class="form__input" type="text" />
+                <div class="placeholder">ФИО</div>
+              </div>
+              <div class="input--item">
+                <input class="form__input" type="text" />
+                <div class="placeholder">Дата рождения</div>
+              </div>
+              <div class="input--item">
+                <input class="form__input" type="tel" />
+                <div class="placeholder">Телефон</div>
+              </div>
+              <div class="input--item">
+                <input class="form__input" type="email" />
+                <div class="placeholder">Эл.почта</div>
+              </div>
+              <div class="input--item">
+                <input class="form__input wide" type="text" />
+                <div class="placeholder">Сообщение</div>
+              </div>
+              <div class="input--item">
+                <input id="checkbox--2" class="checkboxes" type="checkbox" />
+                <label class="label-check" for="checkbox--2"
+                  >Я принимаю условия
+                  <a class="" href="#">передачи информации</a></label
+                >
+              </div>
+              <button class="btn big-btn btn--modal" data-path="two">
+                Отправить
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer" id="#footer">
+      <div class="container">
+        <nav class="nav__footer">
+          <div class="footer__item">
+            <a href="#">
+              <img src="./img/footer/footer-logo.svg" alt="логотип"
+            /></a>
+            <span>© 2022 Easy Credit</span>
+          </div>
+          <div class="footer__item">
+            <ul>
+              <li class="li-header">О НАШЕЙ КОМПАНИИ</li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Условия</a></li>
+              <li><a href="#">Миссия</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <ul>
+              <li class="li-header">КРЕДИТЫ</li>
+              <li><a href="#">Физическим лицам</a></li>
+              <li><a href="#">Автокредиты</a></li>
+              <li><a href="#">Пенсионерам</a></li>
+              <li><a href="#">Юредическим лицам</a></li>
+            </ul>
+          </div>
+          <div class="footer__item links">
+            <ul>
+              <li class="li-header">ПОЛЕЗНЫЕ ССЫЛКИ</li>
+              <li><a href="#">Котакты</a></li>
+              <li><a href="#">Партнёры</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Оплата</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <ul>
+              <li>
+                <p>
+                  EasyCredit – это коммерческое общество по микрофинансированию,
+                  с огромным международным опытытом партнеров компании, а также
+                  квалифицированным менеджментом
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button class="footer--btn">Войти</button>
+        </nav>
+      </div>
+    </footer>
+    <section class="modals">
+      <div class="modal-overlay">
+        <div class="modal modal--1" data-target="one">
+          <div class="modal__box">
+            <div class="modal__title">
+              <h4>Получить займ</h4>
+            </div>
+            <div class="modal__form">
+              <div class="modal__inputs">
+                <form>
+                  <input
+                    class="modal--input"
+                    type="text"
+                    placeholder="Имя"
+                    required
+                  />
+                  <input
+                    class="modal--input"
+                    type="tel"
+                    placeholder="Телефон"
+                    required
+                  />
+                  <p>
+                    Нажимая кнопку “Заказать” вы соглашаетесь на
+                    <a href="#"> обработку персональных данных</a>
+                  </p>
+                </form>
+              </div>
+              <button class="btn btn--modal" data-path="two">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal--2" data-target="two">
+          <div class="modal__box">
+            <div class="modal__title">
+              <h5>Заявка успешно оформлена.</h5>
+            </div>
+            <p>Менеджер свяжется с вами в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/main.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+  </body>
+</html>
